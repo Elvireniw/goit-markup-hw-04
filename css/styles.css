@@ -394,7 +394,7 @@ body {
 }
 
 .customers-list-item {
-  width: calc((100%-120px) / 6);
+  width: calc((100% - 120px) / 6);
   background-color: #ffffff;
   height: 88px;
 }
@@ -537,8 +537,11 @@ body {
   margin-bottom: 16px;
 }
 
+.footer-left-side {
+  margin-right: 120px;
+}
+
 .footer-wrapper {
-  gap: 120px;
   display: flex;
   align-items: baseline;
 }
