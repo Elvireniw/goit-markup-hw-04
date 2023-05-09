@@ -71,6 +71,7 @@ body {
 }
 
 .project-text {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -81,7 +82,7 @@ body {
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -113,6 +114,8 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -223,6 +226,9 @@ body {
 }
 
 .hero {
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -329,15 +335,11 @@ body {
 }
 
 .social-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
 }
 
 .social-list {
-  margin-bottom: 32px;
   gap: 24px;
   display: flex;
   justify-content: center;
@@ -368,7 +370,7 @@ body {
 
 .our-team-card-wrapper {
   text-align: center;
-  padding: 32px 16px 32px 16px;
+  padding: 32px 0;
 }
 
 /*=================Our team========================*/
@@ -457,10 +459,14 @@ body {
 
 /*=================Portfolio list===================*/
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-link {
+  display: block;
 }
 
 .portfolio {
@@ -534,7 +540,7 @@ body {
 .footer-wrapper {
   gap: 120px;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .logo-link-footer {
