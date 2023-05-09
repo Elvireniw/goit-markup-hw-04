@@ -107,6 +107,10 @@ body {
 
 /*=================Header============================*/
 
+.e-mail::before {
+  content: '';
+}
+
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -219,11 +223,17 @@ body {
 }
 
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('/images/bg-hero.jpg');
+  background-size: cover;
+  background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
   margin-left: auto;
   margin-right: auto;
-  background: #2e2f42;
 }
 
 .hero-btn {
@@ -252,6 +262,16 @@ body {
 /*=================Hero============================*/
 
 /*=================Features========================*/
+
+.features-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
 
 .features {
   padding: 120px 0;
@@ -289,6 +309,36 @@ body {
 
 /*=================Our team =======================*/
 
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: #404bbf;
+}
+
+.social-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list {
+  margin-bottom: 32px;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-team-text {
+  padding-bottom: 8px;
+}
+
 .our-team-list {
   display: flex;
   align-items: center;
@@ -314,6 +364,48 @@ body {
 }
 
 /*=================Our team========================*/
+
+/*================= Customers ========================*/
+
+.customers-icon {
+  margin: 16px 32px;
+  display: flex;
+  fill: #8e8f99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: #404bbf;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list-item {
+  width: calc((100%-120px) / 6);
+  background-color: #ffffff;
+  height: 88px;
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
+
+/*================= Customers ========================*/
 
 /*=================Filters=========================*/
 
@@ -356,6 +448,12 @@ body {
 
 /*=================Portfolio list===================*/
 
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio {
   padding: 96px 0 120px;
 }
@@ -383,6 +481,47 @@ body {
 /*=================Portfolio list===================*/
 
 /*=================Footer============================*/
+
+.social-list-footer-icon {
+  fill: #f4f4fd;
+}
+
+.social-list-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-list-footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list-footer-item:hover,
+.social-list-footer-item:focus {
+  background-color: #31d0aa;
+}
+
+.footer-right-side-title {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-wrapper {
+  gap: 120px;
+  display: flex;
+  align-items: flex-start;
+}
 
 .logo-link-footer {
   display: inline-block;
